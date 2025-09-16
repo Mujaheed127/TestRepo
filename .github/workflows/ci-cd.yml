@@ -24,9 +24,6 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
 
-    - name: Run tests
-      run: mvn test
-
     - name: Package app
       run: mvn package
 
@@ -35,3 +32,4 @@ jobs:
       with:
         name: demo-app
         path: target/demo-1.0.0.jar
+
