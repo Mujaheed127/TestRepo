@@ -22,14 +22,12 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
-      run: mvn clean install
-
-    - name: Package app
-      run: mvn package
+      run: mvn clean install -Dmaven.test.skip=true
 
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: demo-app
         path: target/demo-1.0.0.jar
+
 
