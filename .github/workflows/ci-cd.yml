@@ -25,7 +25,7 @@ jobs:
       run: mvn clean install -Dmaven.test.skip=true
 
     - name: Run Checkstyle
-      run: mvn checkstyle:check
+      run: mvn checkstyle:checkstyle
 
       
     - name: Upload Checkstyle Report
@@ -40,6 +40,7 @@ jobs:
       with:
         name: demo-app
         path: target/demo-1.0.0.jar
+
 
 
 
