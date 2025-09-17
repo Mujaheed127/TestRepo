@@ -27,11 +27,20 @@ jobs:
     - name: Run Checkstyle
       run: mvn checkstyle:check
 
+      
+    - name: Upload Checkstyle Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: checkstyle-report
+        path: target/site/checkstyle.html
+
+
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: demo-app
         path: target/demo-1.0.0.jar
+
 
 
 
