@@ -1,5 +1,5 @@
 
-name: Java CI/CD
+name: Build Project With CI/CD
 
 on:
   push:
@@ -29,5 +29,6 @@ jobs:
       with:
         name: demo-app
         path: target/demo-1.0.0.jar
+
 
 
