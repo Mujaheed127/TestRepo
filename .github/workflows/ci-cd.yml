@@ -43,10 +43,11 @@ jobs:
 
     
     - name: SonarQube Scan
-      run: mvn sonar:sonar -Dsonar.projectKey=Mujaheed127_TestRepo -Dsonar.organization=Mujaheed127
+      run: mvn sonar:sonar -Dsonar.projectKey=Mujaheed127_TestRepo -Dsonar.organization=mujaheed127
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: https://sonarcloud.io
+
 
 
 
