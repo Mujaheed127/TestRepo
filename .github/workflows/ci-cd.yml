@@ -41,6 +41,15 @@ jobs:
         name: demo-app
         path: target/demo-1.0.0.jar
 
+    
+    - name: SonarQube Scan
+      run: mvn sonar:sonar
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+
+
+
 
 
 
