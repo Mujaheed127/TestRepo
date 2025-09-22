@@ -9,7 +9,7 @@ WORKDIR /app
 COPY . .
 
 # Build the project and skip tests
-RUN mvn clean package -DskipTests
+RUN mvn clean package -Dmaven.test.skip=true
 
 # Stage 2: Create a lightweight image to run the application
 FROM eclipse-temurin:17-jdk
