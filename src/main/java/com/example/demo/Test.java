@@ -1,2 +1,2 @@
-// Simulated secret for testing
-String apiKey = "ghp_1234567890fakeGitHubToken";
+// Simulated secret for testing GitGuardian
+String githubToken = "ghp_1234567890fakeGitHubTokenForTesting";
