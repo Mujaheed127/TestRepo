@@ -6,11 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
-// Simulated secret for testing GitGuardian
-String githubToken = "ghp_abcdefghijklmnopqrstuvwxyz1234567890";
-
-
-
 @SpringBootApplication
 @RestController
 public class DemoApplication {
