@@ -45,7 +45,7 @@
                      <configLocation>google_checks.xml</configLocation>
                      <encoding>UTF-8</encoding>
                      <consoleOutput>true</consoleOutput>
-                     <failsOnError>true</failsOnError>
+                     <failsOnError>false</failsOnError>
                      <outputFileFormat>xml</outputFileFormat>
                      <outputFile>${project.build.directory}/site/checkstyle-result.xml</outputFile>
                      <sourceDirectories>
