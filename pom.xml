@@ -37,6 +37,7 @@
                         <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
+                            <goal>checkstyle</goal> <!-- This generates the HTML report -->
                         </goals>
                     </execution>
                 </executions>
@@ -45,6 +46,8 @@
                     <encoding>UTF-8</encoding>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>true</failsOnError>
+                    <outputFileFormat>html</outputFileFormat>
+                    <outputDirectory>${project.build.directory}/site</outputDirectory>
                 </configuration>
             </plugin> 
                  
