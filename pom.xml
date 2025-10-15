@@ -47,7 +47,7 @@
                      <consoleOutput>true</consoleOutput>
                      <failsOnError>true</failsOnError>
                      <outputFileFormat>xml</outputFileFormat>
-                     <outputDirectory>${project.build.directory}/site/checkstyle-result.xml</outputDirectory>
+                     <outputFile>${project.build.directory}/site/checkstyle-result.xml</outputFile>
                      <sourceDirectories>
                          <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
                      </sourceDirectories>
