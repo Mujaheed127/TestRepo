@@ -34,20 +34,20 @@
                 <version>3.6.0</version>
                 <executions>
                     <execution>
+                        <id>checkstyle-validation</id>
                         <phase>verify</phase>
                         <goals>
-                            <goal>check</goal>
-                            <goal>checkstyle</goal> <!-- This generates the HTML report -->
+                           <goal>checkstyle</goal>
                         </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <configLocation>google_checks.xml</configLocation>
-                    <encoding>UTF-8</encoding>
-                    <consoleOutput>true</consoleOutput>
-                    <failsOnError>true</failsOnError>
-                    <outputFileFormat>html</outputFileFormat>
-                    <outputDirectory>${project.build.directory}/site</outputDirectory>
+                     </execution>
+                 </executions>
+                 <configuration>
+                     <configLocation>google_checks.xml</configLocation>
+                     <encoding>UTF-8</encoding>
+                     <consoleOutput>true</consoleOutput>
+                     <failsOnError>true</failsOnError>
+                     <outputFileFormat>xml</outputFileFormat>
+                     <outputDirectory>${project.build.directory}/site</outputDirectory>
                 </configuration>
             </plugin> 
                  
