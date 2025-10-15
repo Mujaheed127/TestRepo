@@ -1,10 +1,10 @@
-// Simulated real secret
-String awsSecretKey = "AKIAIOSFODNN7EXAMPL
- 
- 
-public class SecretTest {
+package com.example.demo;
+
+public class DemoTest {
     public static void main(String[] args) {
+        // Simulated real secret
         String awsSecretKey = "AKIAIOSFODNN7EXAMPLE";
-        System.out.println("Using secret: " + awsSecretKey);
+        if (awsSecretKey != null)
+            System.out.println("Using secret: " + awsSecretKey); // Missing braces (Checkstyle violation)
     }
 }
