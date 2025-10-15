@@ -48,6 +48,9 @@
                      <failsOnError>true</failsOnError>
                      <outputFileFormat>xml</outputFileFormat>
                      <outputDirectory>${project.build.directory}/site</outputDirectory>
+                     <sourceDirectories>
+                         <sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
+                     </sourceDirectories>
                 </configuration>
             </plugin> 
                  
