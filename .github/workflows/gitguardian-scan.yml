@@ -19,7 +19,7 @@ jobs:
       - name: Install ggshield
         run: pip install ggshield
 
-      - name: Run GitGuardian scan on latest commit
+      - name: Run GitGuardian scan
         run: ggshield secret scan repo . --all-secrets
         env:
           GITGUARDIAN_API_KEY: ${{ secrets.GITGUARDIAN_API_KEY }}
